@@ -1,71 +1,23 @@
-
-# You may want to customise this file depending on your Operating System
-# and the editor that you use.
-#
-# We recommend that you use a Global Gitignore for files that are not related
-# to the project. (https://help.github.com/articles/ignoring-files/#create-a-global-gitignore)
-
-# OS
-#
-# Ref: https://github.com/github/gitignore/blob/master/Global/macOS.gitignore
-# Ref: https://github.com/github/gitignore/blob/master/Global/Windows.gitignore
-# Ref: https://github.com/github/gitignore/blob/master/Global/Linux.gitignore
-.DS_STORE
-Thumbs.db
-
-# Editors
-#
-# Ref: https://github.com/github/gitignore/blob/master/Global
-# Ref: https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore
-# Ref: https://github.com/github/gitignore/blob/master/Global/VisualStudioCode.gitignore
-.idea
-.chrome
-/*.log
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
-# Dependencies
 node_modules
 
-# Compiled files
-/scripts
-/src/environment.js
-/dist
-/test/coverage-jest
-*.iml
-.idea
-.DS_STORE
-.rpt2_cache
-.eslintcache
-TESTS-*.xml
-
-packages/**/*.txt
-**/node_modules
-**/coverage
-**/dist
-**/*.tgz
-/test/**/coverage
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
 /build
 
-**/debug.log
-**/npm-debug.log
-# npm <= 8.4.0 works with .npmrc in individual package
-# so we used to have .npmrc with package-lock=false there
-# npm >= 8.5.0 is deprecating this behavior, so we remove it
-# to make it easy for application, probably add this
-# so in the future, when we move to a higher level of npm, it won't break
-package-lock.json
+# OS
+.DS_Store
+Thumbs.db
 
-screenshots
+# Env
+.env
+.env.*
+!.env.example
+!.env.test
 
-*.code-workspace
-test/benchmarking-apps/runner/cosmos.config.json
-
-# Use the following directory to stash anything in the workspace, that you don't want to push to remote. For example: personal notes, todos etc.
-/.ignored
-**/.angular
-**/webdriver-ts/results
-**/webdriver-ts/traces
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
