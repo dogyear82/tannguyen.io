@@ -1,5 +1,5 @@
 <script>
-    import Test from '$lib/components/Test.svelte';
+    import PageTitle from '$lib/components/PageTitle.svelte';
 
     const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet', 'black', 'white'];
 
@@ -7,52 +7,18 @@
     let showSettings = $state(false);
 </script>
 
-<div class="container" style="--color: {selectedColor};">
+<div class="home">
+    <PageTitle text={"Welcome!"}></PageTitle>
 
-<h1>Welcome to SvelteKit</h1>
-    <Test name="Svelte User" />
+    <nav>
+        <a href="/">home</a>
+        <a href="/about-me">about</a>
+    </nav>
 
-    <div class="settings">
-        <div class="colors">
-            {#each colors as color}
-                <button
-                    class="color"
-                    aria-label={color}
-                    aria-current={selectedColor === color}
-                    style="--color: {color};"
-                    onclick={() => (selectedColor = color)}
-                    >
-                </button>
-            {/each}
-        </div>
-    </div><!-- .settings -->
-</div><!-- .container -->
+</div><!-- .home -->
 
 <style>
-    .container {
-        background: var(--color, #fff);
-        height: 100vh;
-        width: 100vw;
+    .home {
+        width: 100%;
     }
-    .colors {
-        align-items: center;
-        display: grid;
-        grid-gap: .5em;
-		grid-template-columns: repeat(9, 1fr);
-    }
-
-    .color {
-        aspect-ratio: 1;
-        border-radius: 50%;
-        background: var(--color, #fff);
-        filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.2));
-		transform: none;
-        transition:L all 0.1s;
-    }
-
-	.color[aria-current="true"] {
-		transform: translate(1px, 1px);
-		filter: none;
-		box-shadow: inset 3px 3px 4px rgba(0,0,0,0.2);
-	}
 </style>
