@@ -1,13 +1,18 @@
 <script>
+    import Nav from '$lib/components/Nav.svelte';
+
     let { children } = $props();
 
     const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet', 'black', 'white'];
 
     let selectedColor = $state(colors[0]);
-    let showSettings = $state(false);
 </script>
 
 <div class="container">
+    <div class="nav-container">
+        <Nav />
+    </div>
+
     <div class="content">
         {@render children()}
     </div>
@@ -15,16 +20,24 @@
 
 <style>
     .container {
+        background: #373737;
+        margin: auto;
         min-height: 100vh;
-        width: 100vw;
+        position: relative;
+    }
+
+    .nav-container {
+        position: absolute;
+        top: 0;
+        left: 0;
     }
     
     .content {
         border: 1px solid #000;
-        display: grid;
         gap: 0 0;
         margin: 0 auto;
         min-height: 100vh;
+        width: 100%;
     }
 
     .colors {
@@ -50,13 +63,13 @@
 	}
 
     @media (min-width: 1920px) {
-        .content {
+        .container {
             width: 1920px;
         }
     }
 
     @media (max-width: 1919px) {
-        .content {
+        .container {
             width: 100%;
         }
     }
