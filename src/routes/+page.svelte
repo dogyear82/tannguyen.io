@@ -13,7 +13,7 @@
 </script>
 
 <div class="home">
-    <PageTitle text={"Welcome!"} />
+    <PageTitle>Welcome!</PageTitle>
 </div><!-- .home -->
 
 <style>

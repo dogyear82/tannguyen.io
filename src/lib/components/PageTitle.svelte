@@ -1,8 +1,8 @@
 <script>
-    let { text } = $props();
+    const { children } = $props();
 </script>
 
-<h1 class="title">{text}</h1>
+<h1 class="title">{@render children?.()}</h1>
 
 <style>
     .title {
