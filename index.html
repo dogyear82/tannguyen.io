@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="A cinematic, interactive guide to our solar system." />
+  <title>ORRERY — A field guide to the solar system</title>
+  <link rel="preconnect" href="https://cdn.babylonjs.com" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app" aria-label="Interactive solar system guide">
+    <canvas id="space" aria-label="Interactive 3D solar system scene"></canvas>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="#scene" aria-label="Orrery home"><span class="brand-mark">◉</span><span>ORRERY</span></a>
+      <p class="eyebrow">A FIELD GUIDE TO OUR NEIGHBOURHOOD</p>
+      <button class="fact-toggle" id="factsToggle" type="button" aria-pressed="true">FUN FACTS <span>ON</span></button>
+    </header>
+    <section class="intro" id="scene" aria-labelledby="intro-title">
+      <p class="kicker">THE SOLAR SYSTEM · 01 / 12</p>
+      <h1 id="intro-title">Our<br><em>cosmic</em><br>address.</h1>
+      <p class="intro-copy">Drift through the objects that make up our corner of the Milky Way.</p>
+      <p class="gesture-hint"><span class="gesture-icon">↔</span> Drag to orbit <span class="dot">·</span> Scroll to travel</p>
+    </section>
+    <nav class="rail" aria-label="Select a celestial object" id="objectRail"></nav>
+    <aside class="object-info" aria-live="polite" id="infoPanel">
+      <div class="info-rule"></div><p class="kicker" id="infoType">PLANET · 03 / 12</p>
+      <h2 id="infoName">Earth</h2><p class="info-description" id="infoDescription"></p>
+      <dl class="facts"><div><dt>MASS</dt><dd id="infoMass"></dd></div><div><dt>GRAVITY</dt><dd id="infoGravity"></dd></div></dl>
+      <p class="fun-fact" id="infoFunFact"></p>
+    </aside>
+    <div class="status" id="status" role="status">INITIALIZING ORRERY <span class="status-dot"></span></div>
+    <div class="fallback" id="fallback" hidden><strong>THE VIEWPORT IS DARK.</strong><span>Your browser could not start WebGL. The field guide remains available through the object rail.</span></div>
+    <div class="loading" id="loading"><span></span><p>Mapping the neighbourhood…</p></div>
+  </main>
+  <script src="https://cdn.babylonjs.com/babylon.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
