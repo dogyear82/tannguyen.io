@@ -1,0 +1,144 @@
+{
+  "name": "Tan Nguyen",
+  "alias": "CostlyToaster",
+  "title": "Software Engineer",
+  "about": "PLACEHOLDER — a short paragraph about you. Who you are, what you build, what you care about. Edit resume.json to replace this text; the site re-renders it automatically.",
+  "experience": [
+    {
+      "company": "PLACEHOLDER Company",
+      "role": "Senior Software Engineer",
+      "period": "2022 — Present",
+      "summary": "One or two sentences about what you did there.",
+      "highlights": [
+        "A concrete accomplishment with impact.",
+        "Another highlight worth bragging about."
+      ]
+    },
+    {
+      "company": "PLACEHOLDER Previous Co",
+      "role": "Software Engineer",
+      "period": "2018 — 2022",
+      "summary": "One or two sentences about what you did there.",
+      "highlights": [
+        "Shipped a thing.",
+        "Improved another thing."
+      ]
+    }
+  ],
+  "skills": [
+    { "group": "Languages", "items": ["PLACEHOLDER", "JavaScript", "C#", "Python"] },
+    { "group": "Frameworks", "items": ["PLACEHOLDER", ".NET", "Node.js"] },
+    { "group": "Tools", "items": ["PLACEHOLDER", "Git", "Docker", "Azure"] }
+  ],
+  "projects": [
+    {
+      "name": "Orrery",
+      "description": "A cinematic, interactive field guide to the solar system, built with Babylon.js.",
+      "tech": ["Babylon.js", "WebGL"],
+      "link": "solar-system/"
+    },
+    {
+      "name": "PLACEHOLDER Project",
+      "description": "Short description of a project you're proud of.",
+      "tech": ["Tech", "Stack"],
+      "link": ""
+    }
+  ],
+  "socials": [
+    { "platform": "youtube", "label": "YouTube", "handle": "@CostlyToaster", "url": "https://youtube.com/@CostlyToaster" },
+    { "platform": "tiktok", "label": "TikTok", "handle": "@CostlyToaster", "url": "https://tiktok.com/@CostlyToaster" },
+    { "platform": "instagram", "label": "Instagram", "handle": "@CostlyToaster", "url": "https://instagram.com/CostlyToaster" }
+  ],
+  "translations": {
+    "vi": {
+      "title": "Kỹ sư phần mềm",
+      "about": "PLACEHOLDER — một đoạn ngắn về bạn. Bạn là ai, bạn xây dựng gì, bạn quan tâm điều gì. Sửa resume.json để thay đoạn này; trang sẽ tự hiển thị lại.",
+      "experience": [
+        {
+          "company": "PLACEHOLDER Công ty",
+          "role": "Kỹ sư phần mềm cao cấp",
+          "period": "2022 — Nay",
+          "summary": "Một hai câu về những gì bạn đã làm ở đó.",
+          "highlights": [
+            "Một thành quả cụ thể có sức ảnh hưởng.",
+            "Một điểm nổi bật khác đáng để khoe."
+          ]
+        },
+        {
+          "company": "PLACEHOLDER Công ty trước",
+          "role": "Kỹ sư phần mềm",
+          "period": "2018 — 2022",
+          "summary": "Một hai câu về những gì bạn đã làm ở đó.",
+          "highlights": [
+            "Đã hoàn thành một sản phẩm.",
+            "Đã cải thiện một thứ khác."
+          ]
+        }
+      ],
+      "skills": [
+        { "group": "Ngôn ngữ", "items": ["PLACEHOLDER", "JavaScript", "C#", "Python"] },
+        { "group": "Framework", "items": ["PLACEHOLDER", ".NET", "Node.js"] },
+        { "group": "Công cụ", "items": ["PLACEHOLDER", "Git", "Docker", "Azure"] }
+      ],
+      "projects": [
+        {
+          "name": "Orrery",
+          "description": "Cẩm nang tương tác đầy chất điện ảnh về hệ mặt trời, dựng bằng Babylon.js.",
+          "tech": ["Babylon.js", "WebGL"],
+          "link": "solar-system/"
+        },
+        {
+          "name": "PLACEHOLDER Dự án",
+          "description": "Mô tả ngắn về một dự án bạn tự hào.",
+          "tech": ["Công nghệ", "Nền tảng"],
+          "link": ""
+        }
+      ]
+    },
+    "ja": {
+      "title": "ソフトウェアエンジニア",
+      "about": "PLACEHOLDER — あなたについての短い紹介文。何者で、何を作り、何を大切にしているか。resume.json を編集すればこの文章が差し替わり、サイトが自動で反映します。",
+      "experience": [
+        {
+          "company": "PLACEHOLDER 株式会社",
+          "role": "シニアソフトウェアエンジニア",
+          "period": "2022年 — 現在",
+          "summary": "そこで何をしたかを一、二文で。",
+          "highlights": [
+            "影響のあった具体的な成果。",
+            "自慢したいもう一つのハイライト。"
+          ]
+        },
+        {
+          "company": "PLACEHOLDER 前職",
+          "role": "ソフトウェアエンジニア",
+          "period": "2018年 — 2022年",
+          "summary": "そこで何をしたかを一、二文で。",
+          "highlights": [
+            "プロダクトをリリースした。",
+            "別のものを改善した。"
+          ]
+        }
+      ],
+      "skills": [
+        { "group": "言語", "items": ["PLACEHOLDER", "JavaScript", "C#", "Python"] },
+        { "group": "フレームワーク", "items": ["PLACEHOLDER", ".NET", "Node.js"] },
+        { "group": "ツール", "items": ["PLACEHOLDER", "Git", "Docker", "Azure"] }
+      ],
+      "projects": [
+        {
+          "name": "Orrery",
+          "description": "Babylon.js で作った、映像的でインタラクティブな太陽系図鑑。",
+          "tech": ["Babylon.js", "WebGL"],
+          "link": "solar-system/"
+        },
+        {
+          "name": "PLACEHOLDER プロジェクト",
+          "description": "自信のあるプロジェクトの短い説明。",
+          "tech": ["技術", "スタック"],
+          "link": ""
+        }
+      ]
+    }
+  }
+}

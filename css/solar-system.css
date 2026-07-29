@@ -1,0 +1,156 @@
+/* Orrery page — layout for the solar system field guide. */
+.intro {
+  position: absolute;
+  z-index: 2;
+  left: 7vw;
+  top: 20%;
+  max-width: 300px;
+}
+
+.intro h1 {
+  font-size: clamp(58px, 7.2vw, 112px);
+  line-height: .86;
+  letter-spacing: -.075em;
+  margin: 0;
+  color: var(--paper);
+  font-weight: 700;
+}
+
+.intro h1 em { font-style: normal; color: var(--orange); }
+
+.intro-copy {
+  font-size: 14px;
+  line-height: 1.65;
+  max-width: 220px;
+  color: #c3c0b9;
+  margin: 28px 0;
+}
+
+.rail {
+  position: absolute;
+  z-index: 2;
+  left: 38px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.rail button {
+  width: 31px;
+  height: 31px;
+  border: 1px solid rgba(255, 255, 255, .2);
+  border-radius: 50%;
+  background: rgba(7, 7, 7, .25);
+  color: #9a9894;
+  cursor: pointer;
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  transition: .25s;
+}
+
+.rail button:hover, .rail button:focus-visible {
+  border-color: var(--orange);
+  color: var(--paper);
+  outline: 2px solid rgba(255, 102, 60, .35);
+  outline-offset: 3px;
+}
+
+.rail button[aria-current=true] {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: #140d0b;
+}
+
+.object-info {
+  position: absolute;
+  z-index: 2;
+  right: 7vw;
+  bottom: 10%;
+  width: min(300px, 28vw);
+}
+
+.object-info h2 {
+  font-size: clamp(38px, 4vw, 62px);
+  letter-spacing: -.07em;
+  color: var(--paper);
+  margin: 0 0 14px;
+}
+
+.info-description {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #c1beb8;
+  margin: 0 0 24px;
+}
+
+.facts {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  gap: 32px;
+  padding: 13px 0;
+  margin: 0;
+}
+
+.facts div { display: flex; flex-direction: column; gap: 6px; }
+
+.facts dd {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  margin: 0;
+  color: var(--paper);
+}
+
+.fun-fact {
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--orange);
+  margin: 18px 0 0;
+}
+
+.status {
+  position: absolute;
+  z-index: 2;
+  left: 38px;
+  bottom: 30px;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--orange);
+  margin-left: 8px;
+  box-shadow: 0 0 10px var(--orange);
+}
+
+@media (max-width: 700px) {
+  .topbar { padding: 20px 20px; }
+  .eyebrow { display: none; }
+  .intro { left: 20px; top: 15%; }
+  .intro h1 { font-size: 64px; }
+  .intro-copy { margin: 20px 0; }
+  .rail {
+    left: 20px;
+    top: auto;
+    bottom: 27px;
+    transform: none;
+    flex-direction: row;
+    gap: 7px;
+  }
+  .rail button { width: 26px; height: 26px; font-size: 8px; }
+  .object-info {
+    right: 20px;
+    left: 20px;
+    bottom: 86px;
+    width: auto;
+    max-width: 320px;
+  }
+  .object-info h2 { font-size: 40px; }
+  .fun-fact { margin-top: 10px; }
+  .status { display: none; }
+  .gesture-hint { display: none; }
+}
